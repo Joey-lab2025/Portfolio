@@ -1,0 +1,212 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family:
+    var(--font-ibm),
+    var(--font-noto),
+    sans-serif;
+  background: #f7f7f4;
+  color: #111;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* ================= Font Utilities ================= */
+
+.font-en {
+  font-family: var(--font-ibm);
+}
+
+.font-cn {
+  font-family: var(--font-noto);
+}
+
+.font-serif {
+  font-family: var(--font-playfair);
+}
+
+.font-editorial {
+  font-family: var(--font-cormorant);
+}
+
+/* ================= Typography System ================= */
+
+.hero-label {
+  font-family: var(--font-ibm);
+  font-size: 12px;
+  letter-spacing: 0.28em;
+  color: #999;
+  text-transform: uppercase;
+}
+
+.hero-en {
+  font-family: var(--font-ibm);
+  font-size: 64px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: 0.08em;
+}
+
+.hero-cn {
+  font-family: var(--font-noto);
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  color: #666;
+}
+
+.hero-intro {
+  font-family: var(--font-ibm);
+  font-size: 15px;
+  line-height: 2;
+  font-weight: 300;
+  color: #666;
+  max-width: 640px;
+}
+
+.section-title {
+  font-family: var(--font-ibm);
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+.sub-title {
+  font-family: var(--font-ibm);
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #888;
+}
+
+.project-title-cn {
+  font-family: var(--font-noto);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+}
+
+.project-title-en {
+  font-family: var(--font-ibm);
+  font-size: 12px;
+  font-weight: 300;
+  color: #777;
+  letter-spacing: 0.08em;
+  margin-top: 3px;
+}
+
+.body-copy {
+  font-family: var(--font-noto);
+  font-size: 15px;
+  line-height: 2.1;
+  font-weight: 300;
+  color: #555;
+  max-width: 700px;
+}
+
+.caption {
+  font-family: var(--font-ibm);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  color: #999;
+}
+
+/* ================= NDC V9 Animation ================= */
+
+.page-enter {
+  animation: pageEnter 0.5s ease both;
+}
+
+@keyframes pageEnter {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.ndc-fade {
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity 0.45s ease,
+    transform 0.45s ease;
+}
+
+.ndc-fade.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ================= Image Hover ================= */
+
+.ndc-image,
+.image-hover {
+  overflow: hidden;
+}
+
+.ndc-image img,
+.image-hover img {
+  transition:
+    transform 0.9s ease,
+    opacity 0.9s ease;
+}
+
+.ndc-image:hover img,
+.image-hover:hover img {
+  transform: scale(1.025);
+  opacity: 0.96;
+}
+
+/* ================= Masonry Gallery ================= */
+
+.ndc-gallery {
+  column-count: 1;
+  column-gap: 28px;
+}
+
+@media (min-width: 768px) {
+  .ndc-gallery {
+    column-count: 2;
+  }
+}
+
+.ndc-gallery-item {
+  break-inside: avoid;
+  margin-bottom: 28px;
+}
+
+.ndc-gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ================= Cover Image ================= */
+
+@keyframes coverReveal {
+  from {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
