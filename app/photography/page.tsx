@@ -23,10 +23,7 @@ export default async function PhotographyPage() {
 
           <ProjectCard
             key={project.id}
-            id={project.id}
-            title={project.title}
-            image={project.image_url}
-            year={project.year}
+            project={project}
           />
 
         ))}
