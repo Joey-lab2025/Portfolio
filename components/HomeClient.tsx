@@ -71,7 +71,7 @@ export default function HomeClient({
         </div>
 
         <MainSection id="visual work" title="Visual Work">
-          <div className="mt-[88px]">
+          <div className="mt-[40px]">
             <h3 className="mb-[42px] text-[18px] font-normal tracking-[0.18em] text-neutral-700">
               影像
             </h3>
