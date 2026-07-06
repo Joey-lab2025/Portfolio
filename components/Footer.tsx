@@ -18,7 +18,7 @@ export default function Footer() {
           <a href="/#research" className="block hover:text-black">
             Research
           </a>
-          <a href="/#others" className="block hover:text-black">
+          <a href="/#Visual Work" className="block hover:text-black">
             Others
           </a>
           <Link href="/admin" className="block hover:text-black">

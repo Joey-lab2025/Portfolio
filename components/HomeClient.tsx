@@ -70,7 +70,7 @@ export default function HomeClient({
           </h2>
         </div>
 
-        <MainSection id="others" title="Others">
+        <MainSection id="Visual Work" title="Visual Work">
           <div className="mt-[88px]">
             <h3 className="mb-[42px] text-[18px] font-normal tracking-[0.18em] text-neutral-700">
               新媒体宣传
