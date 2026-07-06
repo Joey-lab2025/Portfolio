@@ -47,7 +47,7 @@ export default function Navbar({
         >
           <a href="/#design" className="hover:opacity-60">Design</a>
           <a href="/#research" className="hover:opacity-60">Research</a>
-          <a href="/#others" className="hover:opacity-60">Others</a>
+          <a href="/#visual work" className="hover:opacity-60">Visual Work</a>
           <Link href="/about" className="hover:opacity-60">About</Link>
           <Link href="/admin" className="hover:opacity-60">Admin</Link>
         </nav>
