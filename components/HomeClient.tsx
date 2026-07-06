@@ -70,53 +70,6 @@ export default function HomeClient({
           </h2>
         </div>
 
-        <MainSection id="design" title="Design">
-          <div className="mt-[40px]">
-            <h3 className="mb-[42px] text-[18px] font-normal tracking-[0.18em] text-neutral-700">
-              实践项目
-            </h3>
-
-            <ProjectGrid
-              projects={byCategory(
-                projects,
-                "design",
-                "practice"
-              )}
-            />
-          </div>
-
-          <div className="mt-[88px]">
-            <h3 className="mb-[42px] text-[18px] font-normal tracking-[0.18em] text-neutral-700">
-              国际竞赛
-            </h3>
-
-            <ProjectGrid
-              projects={byCategory(
-                projects,
-                "design",
-                "competition"
-              )}
-            />
-          </div>
-
-        </MainSection>
-
-        <MainSection id="research" title="Research">
-          <div className="mt-[40px]">
-            <h3 className="mb-[42px] text-[18px] font-normal tracking-[0.18em] text-neutral-700">
-              研究作品
-            </h3>
-
-            <ProjectGrid
-              projects={byCategory(
-                projects,
-                "research"
-              )}
-            />
-          </div>
-
-        </MainSection>
-
         <MainSection id="others" title="Others">
           <div className="mt-[40px]">
             <h3 className="mb-[42px] text-[18px] font-normal tracking-[0.18em] text-neutral-700">
@@ -198,6 +151,55 @@ export default function HomeClient({
             />
           </div>
         </MainSection>
+
+        <MainSection id="research" title="Research">
+          <div className="mt-[40px]">
+            <h3 className="mb-[42px] text-[18px] font-normal tracking-[0.18em] text-neutral-700">
+              研究作品
+            </h3>
+
+            <ProjectGrid
+              projects={byCategory(
+                projects,
+                "research"
+              )}
+            />
+          </div>
+
+        </MainSection>
+
+        <MainSection id="design" title="Design">
+          <div className="mt-[40px]">
+            <h3 className="mb-[42px] text-[18px] font-normal tracking-[0.18em] text-neutral-700">
+              实践项目
+            </h3>
+
+            <ProjectGrid
+              projects={byCategory(
+                projects,
+                "design",
+                "practice"
+              )}
+            />
+          </div>
+
+          <div className="mt-[88px]">
+            <h3 className="mb-[42px] text-[18px] font-normal tracking-[0.18em] text-neutral-700">
+              国际竞赛
+            </h3>
+
+            <ProjectGrid
+              projects={byCategory(
+                projects,
+                "design",
+                "competition"
+              )}
+            />
+          </div>
+
+        </MainSection>
+
+        
       </section>
 
       <Footer />
