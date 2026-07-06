@@ -18,8 +18,8 @@ export default function Footer() {
           <a href="/#research" className="block hover:text-black">
             Research
           </a>
-          <a href="/#Visual Work" className="block hover:text-black">
-            Others
+          <a href="/#visual work" className="block hover:text-black">
+            Visual Work
           </a>
           <Link href="/admin" className="block hover:text-black">
             Admin

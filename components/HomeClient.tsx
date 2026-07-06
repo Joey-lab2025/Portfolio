@@ -70,13 +70,42 @@ export default function HomeClient({
           </h2>
         </div>
 
-        <MainSection id="Visual Work" title="Visual Work">
+        <MainSection id="visual work" title="Visual Work">
           <div className="mt-[88px]">
             <h3 className="mb-[42px] text-[18px] font-normal tracking-[0.18em] text-neutral-700">
               新媒体宣传
             </h3>
 
-            <div className="mt-[88px]">
+            <SubSection
+              title="微信公众号"
+              projects={byCategory(
+                projects,
+                "other",
+                "wechat"
+              )}
+            />
+
+            <SubSection
+              title="视频网页"
+              projects={byCategory(
+                projects,
+                "other",
+                "video_web"
+              )}
+            />
+
+            <SubSection
+              title="小红书"
+              projects={byCategory(
+                projects,
+                "other",
+                "xiaohongshu"
+              )}
+            />
+          </div>
+
+
+          <div className="mt-[88px]">
             <h3 className="mb-[42px] text-[18px] font-normal tracking-[0.18em] text-neutral-700">
               影像
             </h3>
@@ -109,33 +138,7 @@ export default function HomeClient({
             />
           </div>
 
-            <SubSection
-              title="微信公众号"
-              projects={byCategory(
-                projects,
-                "other",
-                "wechat"
-              )}
-            />
-
-            <SubSection
-              title="视频网页"
-              projects={byCategory(
-                projects,
-                "other",
-                "video_web"
-              )}
-            />
-
-            <SubSection
-              title="小红书"
-              projects={byCategory(
-                projects,
-                "other",
-                "xiaohongshu"
-              )}
-            />
-          </div>
+            
           
           <div className="mt-[40px]">
             <h3 className="mb-[42px] text-[18px] font-normal tracking-[0.18em] text-neutral-700">
