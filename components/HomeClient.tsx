@@ -137,7 +137,7 @@ export default function HomeClient({
             />
           </div>           
           
-          <div className="mt-[40px]">
+          <div className="mt-[88px]">
             <h3 className="mb-[42px] text-[18px] font-normal tracking-[0.18em] text-neutral-700">
               活动策划
             </h3>
